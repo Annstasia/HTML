@@ -3,31 +3,44 @@
 	<head>
 		<style>
 			@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+			a{
+				/*background-color: rgba(0, 0, 0, 0);
+				color: white;
+				font-size: 3px;*/
+				position: absolute;
+				top: 5%;
+				margin-left: 4%;
+				padding: 1% 2%;
+				color: white;
+				font-weight: 700;
+				text-decoration: none;
+				outline: none;
+				border: 2px solid;
+				border-radius: 1px;
+				font-family: 'Playfair Display SC', serif;
+				
+
+			}
 			h1 {
-				margin: 4%;
+				
+				top: 20%;
+				margin: 6%;
+				margin-top: 12%;
 				  font-family: 'Playfair Display SC', serif;
 				  font-weight: 500;
-				  letter-spacing: 1px;
-				  font-size: 30px;
+				  letter-spacing: 3px;
+				  font-size: 50px;
+				
 				  color: #ffffff;
 				  text-align: center;
 			}
 			body{
 				/*background-color: #EEE386;*/
-				background-image: url(background.jpg);
-			}
-			button{
-				position: absolute;
-				background-color: blue;
-				top: 80%;
-				margin: 0 65% 0 30%;
-				height: 10%;
-				width: 40%;
-				
+				background-image: url(background7.png);
 			}
 			.parent{
 				position: absolute;
-				top: 40%;
+				top: 50%;
 				width: 40%;
 				margin: 0 65% 0 30%;
 				background-color: #ffffff;
@@ -36,19 +49,31 @@
 				border-top: 5px solid #BBBBBB;
 				border-right: 5px solid black;
 				border-bottom: 5px solid black;
+				z-index: 10000;
 			}
 			
 			.text{
 				text-align: center;
+				font-family: 'Playfair Display SC', serif;
 				margin: 5%;
 				font-size: 20px;
+				letter-spacing: 3px;
 				
 			}
+			input{
+				width: 1px;
+				position: absolute;
+				
+				margin: 0 65% 0 30%;
+				top: 50%;
+			}
+			
 		</style>
 	</head>
 	<body>
+		<a href=''>Мастер</a>
 		<h1>Отсканируйте QR-код</h1>
-		<div class='parent'><p class='text'>Ингредиент1 + Ингредиент2 + Ингредиент3</p></div>
-		<button>Сгенерировать</button>
+		<div class='parent'><p class='text'>Ингредиент + Ингредиент + Ингредиент</p></div>
+		<input type='text'>
 	</body>
 </html>
